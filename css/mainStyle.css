@@ -38,3 +38,15 @@ span.am_close:hover{
 #info ul li{
     cursor:pointer;
 }
+
+#info ul li:hover {
+    color: rgb(0, 26, 255);
+}
+
+#portfolio ul li{
+    cursor:pointer;
+}
+
+#portfolio ul li:hover {
+    color: rgb(0, 26, 255);
+}

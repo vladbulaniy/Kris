@@ -72,6 +72,9 @@ var experience = `<div class="minfo_bg">WORK EXPERIENCE:</div>
 function showAboutMe(content){
     $('#aboutMe').show();
     $('#aboutMe').html(closeAboutMe + content);
+    $('.am_close').click(() => {        
+        $('#aboutMe').hide();
+    });
 }
 
 $('#generalInfo').click(function(){
@@ -86,12 +89,10 @@ $('#experience').click(function(){
     showAboutMe(experience)    
 });
 
-// $('.am_close').on('click', function(event){
-//     console.log('zdtjzjt')
-//     $('#aboutMe').hide();
-// });
+$('#prepress').hover(()=>{
+    $('.ac_bgimage').attr('src','images/Background_for_prepress.jpg');
+});
 
-$('.am_close').click(function(event){
-    console.log('zdtjzjt')
-    $('#aboutMe').hide();
+$('#fullCycle').hover(()=>{
+    $('.ac_bgimage').attr('src','images/Appetizers.jpg');   
 });
