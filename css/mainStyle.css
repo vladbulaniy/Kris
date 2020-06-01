@@ -1,0 +1,40 @@
+#aboutMe{
+  display: none;
+width: 50%;
+height: 50%;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+background-color: black;
+}
+
+.minfo_bg   {display: block; overflow: hidden; width: 95%; background: #222222; text-align: left;
+    text-transform: uppercase; font-size: 16px; font-family: Arial, 
+    sans-serif; line-height: 30px; margin-top: 25px; color: #9EA7B0; padding-left: 5%;}
+
+.lineblock  {display: block; overflow: hidden; border-bottom: 1px solid #616161; line-height: 30px; 
+        font-size: 14px; font-family: Arial, sans-serif;}
+
+.lineb      {display: inherit; width: 43%; float: left; margin-right: 5%; margin-left: 2%;  color: #9f9f9f;}
+
+.val1       {float: left; width: 50%; text-align: center; color: #fff;}
+
+span.am_close{
+	float:right;
+	margin:10px;
+	width:11px;
+	height:12px;
+	cursor:pointer;
+	background:transparent url(../images/close.png) no-repeat top left;
+	opacity:0.4;
+}
+span.am_close:hover{
+	opacity:1.0;
+}
+
+#info ul li{
+    cursor:pointer;
+}
