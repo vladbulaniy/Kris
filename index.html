@@ -45,10 +45,10 @@
 								<li></li>						
 								<li id="prepress">Prepress (Prepress of flexographic printing)</li>
 								<li id="fullCycle">Full cycle (from design to end-product)</li>
-								<li>Drawing layouts (recovery initial files)</li>
-								<li>Packaging design</li>
-								<li>Design of information brochures, catalogs, euroflyers and other printing products</li>
-								<li>Logos design</li>
+								<li id="drawingLayouts">Drawing layouts (recovery initial files)</li>
+								<li id="packagingDesign">Packaging design</li>
+								<li id="polygraphy">Design of information brochures, catalogs, euroflyers and other printing products</li>
+								<li id="logosDesign">Logos design</li>
 							</ul>
 						</div>
 					</li>					
@@ -58,6 +58,11 @@
 		<div id="aboutMe">
 			<span class="am_close"></span>
 		</div>
+
+		<div id="gallery">
+			<span class="gal_close"></span>
+		</div>
+
 		<!-- The JavaScript -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -116,6 +121,7 @@
 					showBGImage			= function() {
 						return $.Deferred(
 						function(dfd) {
+							console.log(dfd)
 							//adjusts the dimensions of the image to fit the screen
 							adjustImageSize($ac_bgimage);
 							$ac_bgimage.fadeIn(1000, dfd.resolve);

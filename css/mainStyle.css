@@ -40,7 +40,7 @@ span.am_close:hover{
 }
 
 #info ul li:hover {
-    color: rgb(0, 26, 255);
+    color:#0078C1;
 }
 
 #portfolio ul li{
@@ -48,5 +48,10 @@ span.am_close:hover{
 }
 
 #portfolio ul li:hover {
-    color: rgb(0, 26, 255);
+    color: #0078C1;
+}
+
+#userInfo span {
+    margin-left: 0.6vw;
+    font-size: 0.75vw;
 }

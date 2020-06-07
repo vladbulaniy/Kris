@@ -89,10 +89,41 @@ $('#experience').click(function(){
     showAboutMe(experience)    
 });
 
+let updateBGPicture = (url) => {
+    $('.ac_bgimage').hide();
+    $('.ac_bgimage').attr('src','images/' + url);
+    $('.ac_bgimage').fadeIn(1000);
+}
+
 $('#prepress').hover(()=>{
-    $('.ac_bgimage').attr('src','images/Background_for_prepress.jpg');
+    updateBGPicture('Background_for_prepress.jpg');
 });
 
 $('#fullCycle').hover(()=>{
-    $('.ac_bgimage').attr('src','images/Appetizers.jpg');   
+    updateBGPicture('Background_for_design_concept_full.jpg'); 
 });
+
+$('#drawingLayouts').hover(()=>{
+    updateBGPicture('Background_for_design_drawing.jpg'); 
+});
+
+$('#packagingDesign').hover(()=>{
+    updateBGPicture('Background_for_designl-01.jpg'); 
+});
+
+$('#polygraphy').hover(()=>{
+    updateBGPicture('Background_for_logo_concept.ai');  
+});
+
+$('#logosDesign').hover(()=>{
+    updateBGPicture('Background_for_logo_concept.png');  
+});
+
+
+function showGallery(content){
+    $('#gallery').show();
+    $('#gallery').html(closeAboutMe + content);
+    $('.gal_close').click(() => {        
+        $('#aboutMe').hide();
+    });
+}
