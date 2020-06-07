@@ -19,11 +19,11 @@ img.ac_bgimage{
 	position:fixed;
 	left:0px;
 	top:0px;
-	width:auto;
-	height: 100vh;
+	width: auto; 
+	height: 100%;
 	opacity:0.8;
 	display:none;
-	background-position: center;
+	
 }
 .ac_overlay{
 	width:100%;

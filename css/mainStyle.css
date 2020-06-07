@@ -55,3 +55,32 @@ span.am_close:hover{
     margin-left: 0.6vw;
     font-size: 0.75vw;
 }
+
+
+#gallery {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: black;
+    display: none;
+}
+
+span.gal_close{
+	float:right;
+	margin:10px;
+	width:11px;
+	height:12px;
+	cursor:pointer;
+	background:transparent url(../images/close.png) no-repeat top left;
+	opacity:0.4;
+}
+span.gal_close:hover{
+	opacity:1.0;
+}
+
+#gal_content{
+    width: 90%;
+    height: 100%;
+    outline: 1px solid red;
+    margin: 0 auto;
+}

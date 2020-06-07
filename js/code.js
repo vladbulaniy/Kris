@@ -112,7 +112,7 @@ $('#packagingDesign').hover(()=>{
 });
 
 $('#polygraphy').hover(()=>{
-    updateBGPicture('Background_for_logo_concept.ai');  
+    updateBGPicture('Portfolio_WFile01-02.jpg');  
 });
 
 $('#logosDesign').hover(()=>{
@@ -122,8 +122,12 @@ $('#logosDesign').hover(()=>{
 
 function showGallery(content){
     $('#gallery').show();
-    $('#gallery').html(closeAboutMe + content);
+    $('#gallery').load('./gallery/index1.html');
     $('.gal_close').click(() => {        
-        $('#aboutMe').hide();
+        $('#gallery').hide();
     });
 }
+
+$('#prepress').click(()=> {
+    showGallery();
+})
