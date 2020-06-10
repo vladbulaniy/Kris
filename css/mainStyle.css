@@ -1,4 +1,4 @@
-#aboutMe{
+#aboutMeContainer{
   display: none;
 width: 50%;
 height: 50%;
@@ -9,13 +9,14 @@ bottom: 0;
 left: 0;
 margin: auto;
 background-color: black;
+text-transform:none;
 }
 
 .minfo_bg   {display: block; overflow: hidden; width: 95%; background: #222222; text-align: left;
     text-transform: uppercase; font-size: 16px; font-family: Arial, 
     sans-serif; line-height: 30px; margin-top: 25px; color: #9EA7B0; padding-left: 5%;}
 
-.lineblock  {display: block; overflow: hidden; border-bottom: 1px solid #616161; line-height: 30px; 
+.lineblock  {display: block; overflow: hidden; line-height: 30px; 
         font-size: 14px; font-family: Arial, sans-serif;}
 
 .lineb      {display: inherit; width: 43%; float: left; margin-right: 5%; margin-left: 2%;  color: #9f9f9f;}
@@ -56,6 +57,13 @@ span.am_close:hover{
     font-size: 0.75vw;
 }
 
+#aboutMe{
+    width: 90%;
+    height: 90%;
+    border: 1px solid #616161;
+    margin: 5% auto;
+}
+
 
 #gallery {
     width: 100%;
@@ -83,4 +91,21 @@ span.gal_close:hover{
     height: 100%;
     outline: 1px solid red;
     margin: 0 auto;
+}
+
+.block_bg{
+    border: 1px solid #616161;
+    float: none;
+}
+
+.year, .contentControl, .conteiner{
+    float: left;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.contentControl {
+    cursor: pointer;
+    font-size: 1.2em;
+    
 }
