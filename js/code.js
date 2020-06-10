@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
     var closeAboutMe = `<span class="am_close"></span>`;
     var generalInfo = `<div class="minfo_bg">PERSONAL INFORMATION:</div>
     <div class="lineblock">
@@ -31,38 +31,81 @@ $(document).ready(function () {
     </div>`;
 
     var education = `<div class="minfo_bg">EDUCATION:</div>
-    <div class="lineblock">
-        <div class="lineb">University: Dniprodzerzhinsk Technical State University, 2012</div>
-        <div class="val1">Specialist degree</div>
+
+    <div class="block_bg">
+        <div class="educationYear">2012</div>
+        <div class="contentControl">
+            <div class="collapse">+</div>
+            <div class="expand">-</div>
+        </div>   
+        <div class="conteiner">
+            <div class="title">University: Dniprodzerzhinsk Technical State University</div>
+            <div class="content">
+                Specialist degree
+            </div>
+        </div>
     </div>
-    <div class="lineblock">
-        <div class="lineb">Private IT Academy «Step», November 2013 – 2016 </div>
-        <div class="val1">«Computer graphics and design»</div>
+
+    <div class="block_bg">
+        <div class="educationYear">November 2013 – 2016</div>
+        <div class="contentControl">
+            <div class="collapse">+</div>
+            <div class="expand">-</div>
+        </div>   
+        <div class="conteiner">
+            <div class="title">Private IT Academy «Step»</div>
+            <div class="content">
+                Computer graphics and design    
+            </div>
+        </div>
     </div>
-    <div class="lineblock">
-        <div class="lineb">Private IT Academy «Step», September 2014 – November 2015 </div>
-        <div class="val1">«Development of WEB-Projects»</div>
-    </div>`
+
+    <div class="block_bg">
+        <div class="educationYear">September 2014 – November 2015</div>
+        <div class="contentControl">
+            <div class="collapse">+</div>
+            <div class="expand">-</div>
+        </div>   
+        <div class="conteiner">
+            <div class="title">Private IT Academy «Step»</div>
+            <div class="content">
+                Development of WEB-Projects    
+            </div>
+        </div>
+    </div>
+    `
 
     var experience = `<div class="minfo_bg">WORK EXPERIENCE:</div>
-    <div class="block_bg">
-   <div class="wide">2015 Prepress Graphic Designer, Cantsopttorg LLC.</div>
-   <div class="main_content">- Adapting design layouts per specification;<br>
-   - Development and preparation of advertising original-layouts;<br>
-   - Color correction, color separation, adjustment of customer files, layout changes;<br>
-   - Trapping.</div>
-</div>
 <div class="block_bg">
-   <div class="wide">2012 - 2015 Graphic Designer, Slavprom LLC/Ruban PE.</div>
-   <div class="main_content">- Development and preparing advertising original-layouts per specification;<br>
-   - Matching original-layouts;<br>
-   - Color correction, color separation, adjustment of customer files, layout changes.
+   <div class="year">2015</div>
+   <div class="contentControl">
+    <div class="collapse">+</div>
+    <div class="expand">-</div>
+   </div>   
+   <div class="conteiner">
+    <div class="title">Prepress Graphic Designer, Cantsopttorg LLC</div>
+    <div class="content">
+        - Adapting design layouts per specification;</br>
+        - Development and preparation of advertising original-layouts;<br>
+    - Color correction, color separation, adjustment of customer files, layout changes;<br>
+    - Trapping.
+    </div>
    </div>
 </div>
+
 <div class="block_bg">
-   <div class="wide">2011 Designer, Dniprovsk Holding Company.</div>
-   <div class="main_content">- Adapting design layouts per specification; <br>
-   - Color correction, color separation, adjustment of customer files, layout changes.</div>
+   <div class="year">2012 - 2015</div>
+   <div class="contentControl">
+    <div class="collapse">+</div>
+    <div class="expand">-</div>
+   </div>   
+   <div class="conteiner">
+    <div class="title">Graphic Designer, Slavprom LLC/Ruban PE</div>
+    <div class="content">
+    - Development and preparing advertising original-layouts per specification;</br>
+    - Matching original-layouts;</br>
+    - Color correction, color separation, adjustment of customer files, layout changes.</div>
+   </div>
 </div>
 
 <div class="block_bg">
@@ -78,8 +121,7 @@ $(document).ready(function () {
     - Color correction, color separation, adjustment of customer files, layout changes.</div>
    </div>
 </div>
-</br>
-</br>
+
 <div class="block_bg">
    <div class="year">2011</div>
    <div class="contentControl">
@@ -94,24 +136,24 @@ $(document).ready(function () {
 
 `
 
-    let initWorkExpirience = () => {
+    let initAccordeon = () => {
         $('.content').hide();
         $('.expand').hide();
-        
+
         $('.block_bg .collapse').click((e) => {
-            $('.content').show(500);
-            $('.expand').show();
-            $('.collapse').hide();
-            console.log(e.target);
-            let t = $(this);
-            console.log(t);
+            let document = $(this);
+            let allContentElements = document.find('.content');
+            let allExpandElements = document.find('.expand');
+            let allCollapseElements = document.find('.collapse');
+            allContentElements.hide(500);
+            allExpandElements.hide();
+            allCollapseElements.show();
+            let $this = $(e.target.parentElement.parentElement);
+            $this.find('.content').show(500)
+            $this.find('.expand').show();
+            $this.find('.collapse').hide();
         })
 
-        $('.block_bg .expand').click(() => {
-            $('.content').hide(500);
-            $('.expand').hide();
-            $('.collapse').show();
-        })
     }
 
     function showAboutMe(content) {
@@ -127,12 +169,13 @@ $(document).ready(function () {
     });
 
     $('#education').click(function () {
-        showAboutMe(education)
+        showAboutMe(education);
+        initAccordeon();
     });
 
     $('#experience').click(function () {
         showAboutMe(experience)
-        initWorkExpirience();
+        initAccordeon();
     });
 
     let updateBGPicture = (url) => {
@@ -192,4 +235,4 @@ $(document).ready(function () {
 
 
 
-});
+
