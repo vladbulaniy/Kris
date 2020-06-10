@@ -212,17 +212,7 @@
     function showGallery(content) {
         $('#gallery').show();
 
-        // $('#gallery').load('./gallery/index1.html');
-
-        $.ajax({
-            url: "./gallery/index1.html",
-            type: "GET",
-            crossDomain: true,
-            dataType: "json",
-            success: function (response) {
-                var json = jQuery.parseJSON(response);
-            }
-        });
+        $('#gallery').load('./gallery/index1.html');
 
         $('.gal_close').click(() => {
             $('#gallery').hide();
