@@ -220,8 +220,13 @@
     }
 
     $('#prepress').click(() => {
-        showGallery();
+        location.replace('./gallery/index1.html');        
     })
+
+    $('#fullCycle').click(() => {
+        location.replace('./gallery/index2.html');        
+    })
+    
 
 
 
