@@ -80,7 +80,7 @@ img.ac_bgimage{
 	float:left;
 	position:relative;
 	height:90px;
-	width:0px; 
+	max-width:99%; 
 }
 .ac_menu > ul{
 	float:right;
