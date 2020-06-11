@@ -205,7 +205,7 @@ $('#polygraphy').hover(() => {
 });
 
 $('#logosDesign').hover(() => {
-    updateBGPicture('Background_for_logo_concept.png');
+    updateBGPicture('Background_for_logo_concept.jpg');
 });
 
 
