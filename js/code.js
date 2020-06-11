@@ -220,14 +220,24 @@
     }
 
     $('#prepress').click(() => {
-        location.replace('./gallery/index1.html');        
+        location.replace('./gallery/Prepress.html');        
     })
 
     $('#fullCycle').click(() => {
-        location.replace('./gallery/index2.html');        
+        location.replace('./gallery/FullCycle.html');        
     })
     
-
-
+    $('#drawingLayouts').click(() => {
+        location.replace('./gallery/DrawingLayouts.html');        
+    })
+    $('#packagingDesign').click(() => {
+        location.replace('./gallery/PackagingDesign.html');        
+    })
+    $('#polygraphy').click(() => {
+        location.replace('./gallery/Polygraphy.html');        
+    })
+    $('#logosDesign').click(() => {
+        location.replace('./gallery/LogosDesign.html');        
+    })
 
 
