@@ -19,11 +19,11 @@ var generalInfo = `<div class="minfo_bg">PERSONAL INFORMATION:</div>
     </div>
     <div class="lineblock">
         <div class="lineb">Family status:</div>
-        <div class="val1">Single</div>
+        <div class="val1">Maried</div>
     </div>
     <div class="lineblock">
         <div class="lineb">Number Phone:</div>
-        <div class="val1">+7 968 722 16 99</div>
+        <div class="val1">+38 097 178 23 90</div>
     </div>
     <div class="lineblock">
         <div class="lineb">E-mail address:</div>
