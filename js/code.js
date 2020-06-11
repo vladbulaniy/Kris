@@ -240,20 +240,10 @@ $('#logosDesign').click(() => {
     location.replace('./gallery/LogosDesign.html');
 })
 
-$('.ru').hide();
-
-
 $('#ru').click(() => {
-    $('#ru').css('color','#0078C1')
-    $('#en').css('color','white')
-    $('.en').hide();
-    $('.ru').show();
+    location.replace('./index_ru.html');    
 })
 
 $('#en').click(() => {
-    $('#en').css('color','#0078C1')
-    $('#ru').css('color','white')
-
-    $('.ru').hide();
-    $('.en').show();
+    location.replace('./index.html'); 
 })
