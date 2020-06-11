@@ -1,0 +1,149 @@
+#aboutMeContainer{
+  display: none;
+width: 50%;
+height: 50%;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+background-color: black;
+text-transform:none;
+}
+
+.minfo_bg   {display: block; overflow: hidden; width: 95%; background: #222222; text-align: left;
+    text-transform: uppercase; font-size: 16px; font-family: Arial, 
+    sans-serif; line-height: 30px; margin: 25px 0; color: #9EA7B0; padding-left: 5%;}
+
+.lineblock  {display: block; overflow: hidden; line-height: 30px; 
+        font-size: 14px; font-family: Arial, sans-serif;}
+
+.lineb      {display: inherit; width: 43%; float: left; margin-right: 5%; margin-left: 2%;  color: #9f9f9f;}
+
+.val1       {float: left; width: 50%; text-align: center; color: #fff;}
+
+span.am_close{
+	float:right;
+	margin:10px;
+	width:11px;
+	height:12px;
+	cursor:pointer;
+	background:transparent url(../images/close.png) no-repeat top left;
+	opacity:0.4;
+}
+span.am_close:hover{
+	opacity:1.0;
+}
+
+#info ul li{
+    cursor:pointer;
+}
+
+#info ul li:hover {
+    color:#0078C1;
+}
+
+#portfolio ul li{
+    cursor:pointer;
+}
+
+#portfolio ul li:hover {
+    color: #0078C1;
+}
+
+#userInfo span {
+    margin-left: 0.6vw;
+    font-size: 0.75vw;
+}
+
+#userInfo{
+    width: 2200px;
+}
+
+#aboutMe{
+    width: 90%;
+    height: 90%;
+    border: 1px solid #616161;
+    margin: 5% auto;
+}
+
+
+#gallery {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: black;
+    display: none;
+}
+
+span.gal_close{
+	float:right;
+	margin:10px;
+	width:11px;
+	height:12px;
+	cursor:pointer;
+	background:transparent url(../images/close.png) no-repeat top left;
+	opacity:0.4;
+}
+span.gal_close:hover{
+	opacity:1.0;
+}
+
+#gal_content{
+    width: 90%;
+    height: 100%;
+    outline: 1px solid red;
+    margin: 0 auto;
+}
+
+.block_bg{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.year, .contentControl, .conteiner{       
+    padding: 5px;
+}
+
+.year {
+width: 100px;
+margin-left: 10px;
+}
+
+.block_bg .conteiner .content{
+    color: #616161;
+    font-size: 0.9em;
+}
+
+.educationYear{
+    width: 150px;
+    margin-left: 10px;
+}
+
+.contentControl {
+    cursor: pointer;
+    font-size: 1.3em;    
+    background-color: red;
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#languageBar {
+    background-color: black;    
+    position: absolute;
+    z-index: 2;
+    padding: 3px 10px;
+    right: 5px;
+}
+
+#separate{
+    cursor: none;    
+}
+
+#languageBar span {
+    cursor: pointer;
+}
+
