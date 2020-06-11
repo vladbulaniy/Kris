@@ -11,7 +11,7 @@
 	position:relative;
 	text-align:center;
 	line-height:0px;
-	height: 600px;
+	max-height: 600px;
 }
 .rg-image img{
 	max-height:100%;
