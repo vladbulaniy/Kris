@@ -141,7 +141,7 @@ let initAccordeon = () => {
     $('.expand').hide();
 
     $('.block_bg .collapse').click((e) => {
-        let document = $(this);
+        let document = $(e.target.parentElement.parentElement.parentElement);
         let allContentElements = document.find('.content');
         let allExpandElements = document.find('.expand');
         let allCollapseElements = document.find('.collapse');
@@ -244,11 +244,16 @@ $('.ru').hide();
 
 
 $('#ru').click(() => {
+    $('#ru').css('color','#0078C1')
+    $('#en').css('color','white')
     $('.en').hide();
     $('.ru').show();
 })
 
 $('#en').click(() => {
+    $('#en').css('color','#0078C1')
+    $('#ru').css('color','white')
+
     $('.ru').hide();
     $('.en').show();
 })
