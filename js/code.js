@@ -11,7 +11,7 @@ var generalInfo = `<div class="minfo_bg">PERSONAL INFORMATION:</div>
     </div>
     <div class="lineblock">
         <div class="lineb">Current city:</div>
-        <div class="val1">Lyublino, Moscow, Russia</div>
+        <div class="val1">Novomoskovsk, Dnipro, Ukraine</div>
     </div>
     <div class="lineblock">
         <div class="lineb">Nationality:</div>
