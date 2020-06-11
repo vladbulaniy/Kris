@@ -1,6 +1,6 @@
 
-    var closeAboutMe = `<span class="am_close"></span>`;
-    var generalInfo = `<div class="minfo_bg">PERSONAL INFORMATION:</div>
+var closeAboutMe = `<span class="am_close"></span>`;
+var generalInfo = `<div class="minfo_bg">PERSONAL INFORMATION:</div>
     <div class="lineblock">
         <div class="lineb">Full name:</div>
         <div class="val1">Kristine Agafonova</div>
@@ -30,7 +30,7 @@
         <div class="val1">kristineAgafonova@gmail.com</div>
     </div>`;
 
-    var education = `<div class="minfo_bg">EDUCATION:</div>
+var education = `<div class="minfo_bg">EDUCATION:</div>
 
     <div class="block_bg">
         <div class="educationYear">2012</div>
@@ -75,7 +75,7 @@
     </div>
     `
 
-    var experience = `<div class="minfo_bg">WORK EXPERIENCE:</div>
+var experience = `<div class="minfo_bg">WORK EXPERIENCE:</div>
 <div class="block_bg">
    <div class="year">2015</div>
    <div class="contentControl">
@@ -136,108 +136,119 @@
 
 `
 
-    let initAccordeon = () => {
-        $('.content').hide();
-        $('.expand').hide();
+let initAccordeon = () => {
+    $('.content').hide();
+    $('.expand').hide();
 
-        $('.block_bg .collapse').click((e) => {
-            let document = $(this);
-            let allContentElements = document.find('.content');
-            let allExpandElements = document.find('.expand');
-            let allCollapseElements = document.find('.collapse');
-            allContentElements.hide(500);
-            allExpandElements.hide();
-            allCollapseElements.show();
-            let $this = $(e.target.parentElement.parentElement);
-            $this.find('.content').show(500)
-            $this.find('.expand').show();
-            $this.find('.collapse').hide();
-        })
-
-    }
-
-    function showAboutMe(content) {
-        $('#aboutMeContainer').show();
-        $('#aboutMe').html(content);
-        $('.am_close').click(() => {
-            $('#aboutMeContainer').hide();
-        });
-    }
-
-    $('#generalInfo').click(function () {
-        showAboutMe(generalInfo)
-    });
-
-    $('#education').click(function () {
-        showAboutMe(education);
-        initAccordeon();
-    });
-
-    $('#experience').click(function () {
-        showAboutMe(experience)
-        initAccordeon();
-    });
-
-    let updateBGPicture = (url) => {
-        $('.ac_bgimage').hide();
-        $('.ac_bgimage').attr('src', 'images/' + url);
-        $('.ac_bgimage').fadeIn(1000);
-    }
-
-    $('#prepress').hover(() => {
-        updateBGPicture('Background_for_prepress.jpg');
-    });
-
-    $('#fullCycle').hover(() => {
-        updateBGPicture('Background_for_design_concept_full.jpg');
-    });
-
-    $('#drawingLayouts').hover(() => {
-        updateBGPicture('Background_for_design_drawing.jpg');
-    });
-
-    $('#packagingDesign').hover(() => {
-        updateBGPicture('Background_for_designl-01.jpg');
-    });
-
-    $('#polygraphy').hover(() => {
-        updateBGPicture('Portfolio_WFile01-02.jpg');
-    });
-
-    $('#logosDesign').hover(() => {
-        updateBGPicture('Background_for_logo_concept.png');
-    });
-
-
-    function showGallery(content) {
-        $('#gallery').show();
-
-        $('#gallery').load('./gallery/index1.html');
-
-        $('.gal_close').click(() => {
-            $('#gallery').hide();
-        });
-    }
-
-    $('#prepress').click(() => {
-        location.replace('./gallery/Prepress.html');        
+    $('.block_bg .collapse').click((e) => {
+        let document = $(this);
+        let allContentElements = document.find('.content');
+        let allExpandElements = document.find('.expand');
+        let allCollapseElements = document.find('.collapse');
+        allContentElements.hide(500);
+        allExpandElements.hide();
+        allCollapseElements.show();
+        let $this = $(e.target.parentElement.parentElement);
+        $this.find('.content').show(500)
+        $this.find('.expand').show();
+        $this.find('.collapse').hide();
     })
 
-    $('#fullCycle').click(() => {
-        location.replace('./gallery/FullCycle.html');        
-    })
-    
-    $('#drawingLayouts').click(() => {
-        location.replace('./gallery/DrawingLayouts.html');        
-    })
-    $('#packagingDesign').click(() => {
-        location.replace('./gallery/PackagingDesign.html');        
-    })
-    $('#polygraphy').click(() => {
-        location.replace('./gallery/Polygraphy.html');        
-    })
-    $('#logosDesign').click(() => {
-        location.replace('./gallery/LogosDesign.html');        
-    })
+}
+
+function showAboutMe(content) {
+    $('#aboutMeContainer').show();
+    $('#aboutMe').html(content);
+    $('.am_close').click(() => {
+        $('#aboutMeContainer').hide();
+    });
+}
+
+$('#generalInfo').click(function () {
+    showAboutMe(generalInfo)
+});
+
+$('#education').click(function () {
+    showAboutMe(education);
+    initAccordeon();
+});
+
+$('#experience').click(function () {
+    showAboutMe(experience)
+    initAccordeon();
+});
+
+let updateBGPicture = (url) => {
+    $('.ac_bgimage').hide();
+    $('.ac_bgimage').attr('src', 'images/' + url);
+    $('.ac_bgimage').fadeIn(1000);
+}
+
+$('#prepress').hover(() => {
+    updateBGPicture('Background_for_prepress.jpg');
+});
+
+$('#fullCycle').hover(() => {
+    updateBGPicture('Background_for_design_concept_full.jpg');
+});
+
+$('#drawingLayouts').hover(() => {
+    updateBGPicture('Background_for_design_drawing.jpg');
+});
+
+$('#packagingDesign').hover(() => {
+    updateBGPicture('Background_for_designl-01.jpg');
+});
+
+$('#polygraphy').hover(() => {
+    updateBGPicture('Portfolio_WFile01-02.jpg');
+});
+
+$('#logosDesign').hover(() => {
+    updateBGPicture('Background_for_logo_concept.png');
+});
 
 
+function showGallery(content) {
+    $('#gallery').show();
+
+    $('#gallery').load('./gallery/index1.html');
+
+    $('.gal_close').click(() => {
+        $('#gallery').hide();
+    });
+}
+
+$('#prepress').click(() => {
+    location.replace('./gallery/Prepress.html');
+})
+
+$('#fullCycle').click(() => {
+    location.replace('./gallery/FullCycle.html');
+})
+
+$('#drawingLayouts').click(() => {
+    location.replace('./gallery/DrawingLayouts.html');
+})
+$('#packagingDesign').click(() => {
+    location.replace('./gallery/PackagingDesign.html');
+})
+$('#polygraphy').click(() => {
+    location.replace('./gallery/Polygraphy.html');
+})
+$('#logosDesign').click(() => {
+    location.replace('./gallery/LogosDesign.html');
+})
+
+$('.ru').hide();
+
+
+$('#ru').click(() => {
+    $('.en').hide();
+    $('.ru').show();
+})
+
+$('#en').click(() => {
+    $('.ru').hide();
+    $('.en').show();
+})

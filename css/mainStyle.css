@@ -57,6 +57,10 @@ span.am_close:hover{
     font-size: 0.75vw;
 }
 
+#userInfo{
+    width: 2200px;
+}
+
 #aboutMe{
     width: 90%;
     height: 90%;
@@ -122,4 +126,24 @@ margin-left: 10px;
     width: 25px;
     text-align: center;
     margin-right: 10px;
+}
+
+#languageBar {
+    background-color: black;    
+    position: absolute;
+    z-index: 2;
+    padding: 3px 10px;
+    right: 5px;
+}
+
+#separate{
+    cursor: none;
+}
+
+#languageBar span {
+    cursor: pointer;
+}
+
+#languageBar #en{
+    color: #0078C1!important;
 }
