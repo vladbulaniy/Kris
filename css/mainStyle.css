@@ -64,7 +64,6 @@ span.am_close:hover{
 #aboutMe{
     width: 90%;
     height: 90%;
-    border: 1px solid #616161;
     margin: 5% auto;
 }
 
@@ -103,14 +102,18 @@ span.gal_close:hover{
     align-items: flex-start;
 }
 
-.year, .contentControl, .conteiner{
-       
+.year, .contentControl, .conteiner{       
     padding: 5px;
 }
 
 .year {
 width: 100px;
 margin-left: 10px;
+}
+
+.block_bg .conteiner .content{
+    color: #616161;
+    font-size: 0.9em;
 }
 
 .educationYear{
