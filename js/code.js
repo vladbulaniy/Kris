@@ -77,7 +77,62 @@ var education = `<div class="minfo_bg">EDUCATION:</div>
 
 var experience = `<div class="minfo_bg">WORK EXPERIENCE:</div>
 <div class="block_bg">
-   <div class="year">2015</div>
+   <div class="year">2022</div>
+   <div class="contentControl">
+    <div class="collapse">+</div>
+    <div class="expand">-</div>
+   </div>   
+   <div class="conteiner">
+    <div class="title">Administration internet-stores of online-platforms EPICENTR, ROZETKA</div>
+    <div class="content">
+        - Administration and coding of online-platforms EPICENTR, ROZETKA
+    </div>
+   </div>
+</div>
+
+<div class="block_bg">
+   <div class="year">2020-2022</div>
+   <div class="contentControl">
+    <div class="collapse">+</div>
+    <div class="expand">-</div>
+   </div>   
+   <div class="conteiner">
+    <div class="title">Prepress Designer, TRELAX PACK LLC, Kropivniczkij</div>
+    <div class="content">
+        - Full cycle from design to end-products;<br>
+        - Acceptance and revision of source files;<br>
+        - Color correction layouts per standart;<br>
+        - Prepress layouts per specification of flexographic and Rotogravure printing;<br>
+        - Color correction, color separation, adjustment of clients' files, layout changes;<br>
+        - СolorProof output;<br>
+        - Drawing and revision of source layouts according to client's samples.<br>
+        - Сooperation with repro studios, output of forms (cliches).
+    </div>
+   </div>
+</div>
+
+<div class="block_bg">
+   <div class="year">2016-2020</div>
+   <div class="contentControl">
+    <div class="collapse">+</div>
+    <div class="expand">-</div>
+   </div>   
+   <div class="conteiner">
+    <div class="title">Prepress Designer, Synergy Group LLC, Dnipro</div>
+    <div class="content">
+        - Full cycle from design to end-products;<br>
+        - Acceptance and revision of source files. Matching original-layouts;<br>
+        - Color correction layouts per standart;<br>
+        - Prepress layouts per specification of flexographic printing;<br>
+        - Color correction, color separation, adjustment of clients' files, layout changes;<br>
+        - СolorProof output;<br>
+        - Drawing and revision of source layouts according to client's samples.
+    </div>
+   </div>
+</div>
+
+<div class="block_bg">
+   <div class="year">2016</div>
    <div class="contentControl">
     <div class="collapse">+</div>
     <div class="expand">-</div>
@@ -86,9 +141,9 @@ var experience = `<div class="minfo_bg">WORK EXPERIENCE:</div>
     <div class="title">Prepress Graphic Designer, Cantsopttorg LLC</div>
     <div class="content">
         - Adapting design layouts per specification;</br>
-        - Development and preparation of advertising original-layouts;<br>
-    - Color correction, color separation, adjustment of customer files, layout changes;<br>
-    - Trapping.
+        - Development and preparation of original-layouts;<br>
+        - Color correction, color separation, adjustment of clients' files, layout changes. Trapping;<br>
+        - Development the layouts for duck tape.
     </div>
    </div>
 </div>
@@ -184,29 +239,26 @@ let updateBGPicture = (url) => {
     $('.ac_bgimage').fadeIn(1000);
 }
 
-$('#prepress').hover(() => {
-    updateBGPicture('Background_for_prepress.jpg');
-});
+// $('#prepress').hover(() => {
+//     updateBGPicture('Background_for_prepress.jpg');
+// });
 
-$('#fullCycle').hover(() => {
-    updateBGPicture('Background_for_design_concept_full.jpg');
-});
+// $('#fullCycle').hover(() => {
+//     updateBGPicture('Background_for_design_concept_full.jpg');
+// });
 
-$('#drawingLayouts').hover(() => {
-    updateBGPicture('Background_for_design_drawing.jpg');
-});
+// $('#drawingLayouts').hover(() => {
+//     updateBGPicture('Background_for_design_drawing.jpg');
+// });
 
-$('#packagingDesign').hover(() => {
-    updateBGPicture('Background_for_designl-01.jpg');
-});
 
-$('#polygraphy').hover(() => {
-    updateBGPicture('Portfolio_WFile01-02.jpg');
-});
+// $('#polygraphy').hover(() => {
+//     updateBGPicture('Portfolio_WFile01-02.jpg');
+// });
 
-$('#logosDesign').hover(() => {
-    updateBGPicture('Background_for_logo_concept.jpg');
-});
+// $('#logosDesign').hover(() => {
+//     updateBGPicture('Background_for_logo_concept.jpg');
+// });
 
 
 function showGallery(content) {
